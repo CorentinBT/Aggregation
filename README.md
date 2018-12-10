@@ -12,7 +12,7 @@ higher.
 
 On linux, building should be as simple as (with git)
 
-    git clone https://github.com/CorentinBT/Aggregate.git
+    git clone https://github.com/CorentinBT/Aggregation.git
     cd Aggregate
     mkdir build
     cd build
@@ -21,10 +21,10 @@ On linux, building should be as simple as (with git)
 
 ## Running
 
-Simply run the Aggregate in the build folder. The binary is invoked with the following arguments:
+Go to the `bin/` directory and simply run the aggregate binary file. The binary is invoked with the following arguments:
 
 ```sh
-aggregat --filespawn FILE [--time] [--input FILE] [--output FILE] [--radroot RADIUS]
+./aggregate --filespawn FILE [--time] [--input FILE] [--output FILE] [--radroot RADIUS]
 ```
 
 * `--filespawn` input file for spheres to spawn

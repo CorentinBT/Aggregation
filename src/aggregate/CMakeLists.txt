@@ -1,3 +1,3 @@
-add_executable(main main.cpp)
+add_executable(aggregate main.cpp)
 
-target_link_libraries(main PRIVATE common core)
+target_link_libraries(aggregate PRIVATE common core)
