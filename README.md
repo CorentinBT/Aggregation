@@ -34,6 +34,8 @@ Go to the `bin/` directory and simply run the aggregate binary file. The binary 
 * `--radroot` radius of the root sphere (default : 6.0)
 * `--explrad` default exploration radius if not provided in the input file (see below)
 * `--nbstep` default number of gradient step if not provided in the input file (see below)
+* `--alpha` default angle of spawn in degree between 0 and 360
+* `--beta` default angle of spawn in degree between -90 and 90
 
 ## Outputs
 
@@ -52,21 +54,20 @@ Each line characterize a group of spheres :
 * The first column provides the number sphere(s) to spawn.
 * The second column provides the radius of sphere(s) to spawn.
 * The third column provides the exploration radius for this group of sphere(s).
-* The fourth column provides the number of gradient step to apply to this group of spheres(s).
 
 The third and fourth column are optionals if no values is provided the default values will be applied.
 
 For example :
 ```
-100 5 50 10
-25 2 25 12
+100 5 50 
+25 2 25 
 50 1
 ```
 Is equivalent to :
 
-Spawn 100 spheres of radius 5, exploration radius of 50 and the maximum numbers of step is 10.  
-Spawn 25 spheres of radius 2, exploration radius of 25 and the maximum numbers of step is 12.  
-Spawn 50 spheres of radius 1 with default exploration radius and default maximum numbers of steps.  
+Spawn 100 spheres of radius 5 and exploration radius of 50.  
+Spawn 25 spheres of radius 2 and exploration radius of 25.  
+Spawn 50 spheres of radius 1 and with default exploration radius.  
 
 
 The `FILE` input, with option `--input`, contains a list of all spheres precomputed.
